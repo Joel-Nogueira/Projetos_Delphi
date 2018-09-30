@@ -1,6 +1,6 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <ProjectGuid>{E6BB95F2-68C0-4F19-AF0E-0490C656A4F2}</ProjectGuid>
+        <ProjectGuid>{5161ED5C-8AA5-4FF1-BFE7-47A9150B2A07}</ProjectGuid>
         <ProjectVersion>18.4</ProjectVersion>
         <FrameworkType>VCL</FrameworkType>
         <MainSource>Aula1.dpr</MainSource>
