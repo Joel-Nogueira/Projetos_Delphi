@@ -1,4 +1,4 @@
-program Aula1;
+program Aplicacao;
 
 uses
   Vcl.Forms,
