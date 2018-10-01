@@ -1,0 +1,68 @@
+unit uEstado;
+
+interface
+
+type Estado = class
+  private
+    coidgo: Integer;
+    descricao: String;
+    uf: String;
+
+  public
+    constructor Create;
+    destructor Destrut;
+
+    function GetCodigo: Integer;
+    function GetDescricao: String;
+    function GetUf: String;
+
+    procedure SetCodigo(pCodigo: Integer);
+    procedure SetDescricao(pDescricao: String);
+    procedure SetUf(pUf: String);
+end;
+
+implementation
+
+{ Estado }
+
+constructor Estado.Create;
+begin
+
+end;
+
+destructor Estado.Destrut;
+begin
+
+end;
+
+function Estado.GetCodigo: Integer;
+begin
+
+end;
+
+function Estado.GetDescricao: String;
+begin
+
+end;
+
+function Estado.GetUf: String;
+begin
+
+end;
+
+procedure Estado.SetCodigo(pCodigo: Integer);
+begin
+
+end;
+
+procedure Estado.SetDescricao(pDescricao: String);
+begin
+
+end;
+
+procedure Estado.SetUf(pUf: String);
+begin
+
+end;
+
+end.

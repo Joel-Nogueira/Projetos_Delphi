@@ -1,0 +1,12 @@
+unit uEstado;
+
+interface
+
+type Estado = class
+  private
+  public
+end;
+
+implementation
+
+end.

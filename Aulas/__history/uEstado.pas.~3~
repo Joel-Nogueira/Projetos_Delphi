@@ -1,0 +1,18 @@
+unit uEstado;
+
+interface
+
+type Estado = class
+  private
+    coidgo: Integer;
+    descricao: String;
+    uf: String;
+
+  public
+    constructor Create;
+    destructor Destrut;
+end;
+
+implementation
+
+end.

@@ -10,10 +10,16 @@ type
   TForm1 = class(TForm)
     btnGravar: TButton;
     btnRecuperar: TButton;
-    editCodigo: TEdit;
-    editDescricao: TEdit;
-    editCodigo2: TEdit;
-    editDescricao2: TEdit;
+    editCodigoPais: TEdit;
+    editDescricaoPais: TEdit;
+    editCodigoPais2: TEdit;
+    editDescricaoPais2: TEdit;
+    editCodigoEstado: TEdit;
+    editDescricaoEstado: TEdit;
+    editCodigoEstado2: TEdit;
+    editDescricaoEstado2: TEdit;
+    editEstadoUf: TEdit;
+    editUfEstado2: TEdit;
     procedure btnGravarClick(Sender: TObject);
     procedure btnRecuperarClick(Sender: TObject);
   private
@@ -33,8 +39,12 @@ implementation
 procedure TForm1.btnGravarClick(Sender: TObject);
 begin
   umPais := Pais.Create;
-  umPais.SetCodigo(StrToInt(Self.editCodigo.Text));
-  umPais.SetDescricao(Self.editDescricao.Text);
+  umPais.SetCodigo(StrToInt(Self.editCodigoPais.Text));
+  umPais.SetDescricao(Self.editDescricaoPais.Text);
+
+  umPais.GetEstado.SetCodigo(StrToInt(Self.editCodigoEstado.Text));
+  umPais.GetEstado.SetDescricao(Self.editDescricaoEstado.Text);
+  umPais.GetEstado.SetUf(Self.editEstadoUf.Text);
 end;
 
 procedure TForm1.btnRecuperarClick(Sender: TObject);
@@ -44,8 +54,12 @@ begin
 
   if umPais <> nil then
   begin
-    editCodigo2.Text := IntToStr(umPais.GetCodigo);
-    editDescricao2.Text := umPais.GetDescricao;
+    editCodigoPais2.Text := IntToStr(umPais.GetCodigo);
+    editDescricaoPais2.Text := umPais.GetDescricao;
+
+    editCodigoEstado2.Text := IntToStr(umPais.GetEstado.GetCodigo);
+    editDescricaoEstado2.Text := umPais.GetEstado.GetDescricao;
+    editUfEstado2.Text := umPais.GetEstado.GetUf;
 
     umPais.Destruct;
   end;

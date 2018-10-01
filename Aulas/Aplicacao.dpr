@@ -2,7 +2,8 @@ program Aplicacao;
 
 uses
   Vcl.Forms,
-  uGerente in 'uGerente.pas' {Form1};
+  uGerente in 'uGerente.pas' {Form1},
+  uPais in 'uPais.pas';
 
 {$R *.res}
 
