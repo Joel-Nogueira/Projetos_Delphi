@@ -15,56 +15,56 @@ object Form1: TForm1
   TextHeight = 13
   object Label1: TLabel
     Left = 80
-    Top = 96
+    Top = 72
     Width = 68
     Height = 13
     Caption = 'Descri'#231#227'o Pa'#237's'
   end
   object Label2: TLabel
     Left = 80
-    Top = 128
+    Top = 104
     Width = 69
     Height = 13
     Caption = 'C'#243'digo Estado'
   end
   object Label3: TLabel
     Left = 80
-    Top = 159
+    Top = 135
     Width = 82
     Height = 13
     Caption = 'Descri'#231#227'o Estado'
   end
   object Label4: TLabel
     Left = 80
-    Top = 191
+    Top = 167
     Width = 13
     Height = 13
     Caption = 'UF'
   end
   object Label5: TLabel
     Left = 80
-    Top = 222
+    Top = 198
     Width = 69
     Height = 13
     Caption = 'C'#243'digo Cidade'
   end
   object Label6: TLabel
     Left = 80
-    Top = 254
+    Top = 230
     Width = 82
     Height = 13
     Caption = 'Descri'#231#227'o Cidade'
   end
   object Label7: TLabel
     Left = 80
-    Top = 67
+    Top = 43
     Width = 55
     Height = 13
     Caption = 'C'#243'digo Pa'#237's'
   end
   object btnGravar: TButton
     Left = 212
-    Top = 288
+    Top = 264
     Width = 75
     Height = 25
     Caption = 'Gravar'
@@ -75,7 +75,7 @@ object Form1: TForm1
   end
   object btnRecuperar: TButton
     Left = 396
-    Top = 288
+    Top = 264
     Width = 75
     Height = 25
     Caption = 'Recuperar'
@@ -86,7 +86,7 @@ object Form1: TForm1
   end
   object editCodigoPais: TEdit
     Left = 190
-    Top = 64
+    Top = 40
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -95,7 +95,7 @@ object Form1: TForm1
   end
   object editDescricaoPais: TEdit
     Left = 190
-    Top = 95
+    Top = 71
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -104,7 +104,7 @@ object Form1: TForm1
   end
   object editCodigoPais2: TEdit
     Left = 372
-    Top = 64
+    Top = 40
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -113,7 +113,7 @@ object Form1: TForm1
   end
   object editDescricaoPais2: TEdit
     Left = 372
-    Top = 95
+    Top = 71
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -122,7 +122,7 @@ object Form1: TForm1
   end
   object editCodigoEstado: TEdit
     Left = 190
-    Top = 126
+    Top = 102
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -131,7 +131,7 @@ object Form1: TForm1
   end
   object editDescricaoEstado: TEdit
     Left = 190
-    Top = 157
+    Top = 133
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -140,7 +140,7 @@ object Form1: TForm1
   end
   object editCodigoEstado2: TEdit
     Left = 372
-    Top = 126
+    Top = 102
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -149,7 +149,7 @@ object Form1: TForm1
   end
   object editDescricaoEstado2: TEdit
     Left = 372
-    Top = 157
+    Top = 133
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -158,7 +158,7 @@ object Form1: TForm1
   end
   object editEstadoUf: TEdit
     Left = 190
-    Top = 188
+    Top = 164
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -167,7 +167,7 @@ object Form1: TForm1
   end
   object editUfEstado2: TEdit
     Left = 372
-    Top = 188
+    Top = 164
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -176,7 +176,7 @@ object Form1: TForm1
   end
   object editCodigoCidade: TEdit
     Left = 190
-    Top = 219
+    Top = 195
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -185,7 +185,7 @@ object Form1: TForm1
   end
   object editCodigoCidade2: TEdit
     Left = 372
-    Top = 219
+    Top = 195
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -194,7 +194,7 @@ object Form1: TForm1
   end
   object editDescricaoCidade: TEdit
     Left = 190
-    Top = 250
+    Top = 226
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -203,7 +203,7 @@ object Form1: TForm1
   end
   object editDescricaoCidade2: TEdit
     Left = 372
-    Top = 250
+    Top = 226
     Width = 121
     Height = 21
     ParentShowHint = False
@@ -222,14 +222,16 @@ object Form1: TForm1
       object Estado1: TMenuItem
         Caption = 'Estado'
       end
-      object Pas1: TMenuItem
+      object Pais1: TMenuItem
         Caption = 'Pa'#237's'
+        OnClick = Pais1Click
       end
       object N1: TMenuItem
         Caption = '-'
       end
       object Sair1: TMenuItem
         Caption = 'Sair'
+        OnClick = Sair1Click
       end
     end
   end

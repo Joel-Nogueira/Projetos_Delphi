@@ -1,7 +1,7 @@
-object Form2: TForm2
+object frmCadastroCidade: TfrmCadastroCidade
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = 'Cadastro Cidade'
   ClientHeight = 358
   ClientWidth = 447
   Color = clBtnFace

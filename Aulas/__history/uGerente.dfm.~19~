@@ -1,0 +1,244 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ClientHeight = 344
+  ClientWidth = 631
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 80
+    Top = 72
+    Width = 68
+    Height = 13
+    Caption = 'Descri'#231#227'o Pa'#237's'
+  end
+  object Label2: TLabel
+    Left = 80
+    Top = 104
+    Width = 69
+    Height = 13
+    Caption = 'C'#243'digo Estado'
+  end
+  object Label3: TLabel
+    Left = 80
+    Top = 135
+    Width = 82
+    Height = 13
+    Caption = 'Descri'#231#227'o Estado'
+  end
+  object Label4: TLabel
+    Left = 80
+    Top = 167
+    Width = 13
+    Height = 13
+    Caption = 'UF'
+  end
+  object Label5: TLabel
+    Left = 80
+    Top = 198
+    Width = 69
+    Height = 13
+    Caption = 'C'#243'digo Cidade'
+  end
+  object Label6: TLabel
+    Left = 80
+    Top = 230
+    Width = 82
+    Height = 13
+    Caption = 'Descri'#231#227'o Cidade'
+  end
+  object Label7: TLabel
+    Left = 80
+    Top = 43
+    Width = 55
+    Height = 13
+    Caption = 'C'#243'digo Pa'#237's'
+  end
+  object btnGravar: TButton
+    Left = 212
+    Top = 264
+    Width = 75
+    Height = 25
+    Caption = 'Gravar'
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 0
+    OnClick = btnGravarClick
+  end
+  object btnRecuperar: TButton
+    Left = 396
+    Top = 264
+    Width = 75
+    Height = 25
+    Caption = 'Recuperar'
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 1
+    OnClick = btnRecuperarClick
+  end
+  object editCodigoPais: TEdit
+    Left = 190
+    Top = 40
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 2
+  end
+  object editDescricaoPais: TEdit
+    Left = 190
+    Top = 71
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 3
+  end
+  object editCodigoPais2: TEdit
+    Left = 372
+    Top = 40
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 4
+  end
+  object editDescricaoPais2: TEdit
+    Left = 372
+    Top = 71
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 5
+  end
+  object editCodigoEstado: TEdit
+    Left = 190
+    Top = 102
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 6
+  end
+  object editDescricaoEstado: TEdit
+    Left = 190
+    Top = 133
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 7
+  end
+  object editCodigoEstado2: TEdit
+    Left = 372
+    Top = 102
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 8
+  end
+  object editDescricaoEstado2: TEdit
+    Left = 372
+    Top = 133
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 9
+  end
+  object editEstadoUf: TEdit
+    Left = 190
+    Top = 164
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 10
+  end
+  object editUfEstado2: TEdit
+    Left = 372
+    Top = 164
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 11
+  end
+  object editCodigoCidade: TEdit
+    Left = 190
+    Top = 195
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 12
+  end
+  object editCodigoCidade2: TEdit
+    Left = 372
+    Top = 195
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 13
+  end
+  object editDescricaoCidade: TEdit
+    Left = 190
+    Top = 226
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 14
+  end
+  object editDescricaoCidade2: TEdit
+    Left = 372
+    Top = 226
+    Width = 121
+    Height = 21
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 15
+  end
+  object btnEvento: TButton
+    Left = 304
+    Top = 312
+    Width = 75
+    Height = 25
+    Caption = 'Evento'
+    TabOrder = 16
+  end
+  object MainMenu1: TMainMenu
+    Left = 16
+    Top = 8
+    object Cadastro1: TMenuItem
+      Caption = 'Cadastro'
+      object Cidade1: TMenuItem
+        Caption = 'Cidade'
+        OnClick = Cidade1Click
+      end
+      object Estado1: TMenuItem
+        Caption = 'Estado'
+      end
+      object Pas1: TMenuItem
+        Caption = 'Pa'#237's'
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Sair1: TMenuItem
+        Caption = 'Sair'
+      end
+    end
+  end
+end

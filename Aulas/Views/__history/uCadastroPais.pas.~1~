@@ -1,0 +1,24 @@
+unit uCadastroPais;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TfrmCadastroPais = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadastroPais: TfrmCadastroPais;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, uCidade, uEstado, uPais, uCadastroCidade,
-  Vcl.Menus;
+  uCadastroPais, Vcl.Menus;
 
 type
   TForm1 = class(TForm)
@@ -36,16 +36,19 @@ type
     Cadastro1: TMenuItem;
     Cidade1: TMenuItem;
     Estado1: TMenuItem;
-    Pas1: TMenuItem;
+    Pais1: TMenuItem;
     N1: TMenuItem;
     Sair1: TMenuItem;
     procedure btnGravarClick(Sender: TObject);
     procedure btnRecuperarClick(Sender: TObject);
     procedure Cidade1Click(Sender: TObject);
+    procedure Pais1Click(Sender: TObject);
+    procedure Sair1Click(Sender: TObject);
   private
     { Private declarations }
     umaCidade: Cidade;
     umFrmCadastroCidade: TfrmCadastroCidade;
+    umFrmCadastroPais: TfrmCadastroPais;
 
   public
     { Public declarations }
@@ -115,6 +118,18 @@ begin
   umFrmCadastroCidade := TfrmCadastroCidade.Create(nil);
   umFrmCadastroCidade.ShowModal;
   umFrmCadastroCidade.Destroy;
+end;
+
+procedure TForm1.Pais1Click(Sender: TObject);
+begin
+  umFrmCadastroPais := TfrmCadastroPais.Create(nil);
+  umFrmCadastroPais.ShowModal;
+  umFrmCadastroPais.Destroy;
+end;
+
+procedure TForm1.Sair1Click(Sender: TObject);
+begin
+  Close;
 end;
 
 end.
