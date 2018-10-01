@@ -34,12 +34,12 @@ end;
 
 function Pais.GetCodigo: Integer;
 begin
-  result := codigo;
+  Result := codigo;
 end;
 
 function Pais.GetDescricao: String;
 begin
-    result := descricao;
+  Result := descricao;
 end;
 
 procedure Pais.SetCodigo(pCodigo: Integer);
