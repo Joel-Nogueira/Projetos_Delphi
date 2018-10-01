@@ -1,145 +1,236 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  ClientHeight = 273
-  ClientWidth = 503
+  ClientHeight = 344
+  ClientWidth = 631
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  Menu = MainMenu1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
+  object Label1: TLabel
+    Left = 80
+    Top = 96
+    Width = 68
+    Height = 13
+    Caption = 'Descri'#231#227'o Pa'#237's'
+  end
+  object Label2: TLabel
+    Left = 80
+    Top = 128
+    Width = 69
+    Height = 13
+    Caption = 'C'#243'digo Estado'
+  end
+  object Label3: TLabel
+    Left = 80
+    Top = 159
+    Width = 82
+    Height = 13
+    Caption = 'Descri'#231#227'o Estado'
+  end
+  object Label4: TLabel
+    Left = 80
+    Top = 191
+    Width = 13
+    Height = 13
+    Caption = 'UF'
+  end
+  object Label5: TLabel
+    Left = 80
+    Top = 222
+    Width = 69
+    Height = 13
+    Caption = 'C'#243'digo Cidade'
+  end
+  object Label6: TLabel
+    Left = 80
+    Top = 254
+    Width = 82
+    Height = 13
+    Caption = 'Descri'#231#227'o Cidade'
+  end
+  object Label7: TLabel
+    Left = 80
+    Top = 67
+    Width = 55
+    Height = 13
+    Caption = 'C'#243'digo Pa'#237's'
+  end
   object btnGravar: TButton
-    Left = 112
-    Top = 224
+    Left = 212
+    Top = 288
     Width = 75
     Height = 25
     Caption = 'Gravar'
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 0
     OnClick = btnGravarClick
   end
   object btnRecuperar: TButton
-    Left = 296
-    Top = 224
+    Left = 396
+    Top = 288
     Width = 75
     Height = 25
     Caption = 'Recuperar'
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 1
     OnClick = btnRecuperarClick
   end
   object editCodigoPais: TEdit
-    Left = 90
-    Top = 8
+    Left = 190
+    Top = 64
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 2
-    TextHint = 'C'#243'digo Pa'#237's'
   end
   object editDescricaoPais: TEdit
-    Left = 90
-    Top = 35
+    Left = 190
+    Top = 95
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 3
-    TextHint = 'Descri'#231#227'o Pa'#237's'
   end
   object editCodigoPais2: TEdit
-    Left = 272
-    Top = 8
+    Left = 372
+    Top = 64
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 4
-    TextHint = 'C'#243'digo Pa'#237's 2'
   end
   object editDescricaoPais2: TEdit
-    Left = 272
-    Top = 35
+    Left = 372
+    Top = 95
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 5
-    TextHint = 'Descri'#231#227'o Pa'#237's 2'
   end
   object editCodigoEstado: TEdit
-    Left = 90
-    Top = 62
+    Left = 190
+    Top = 126
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 6
-    TextHint = 'C'#243'digo Estado'
   end
   object editDescricaoEstado: TEdit
-    Left = 90
-    Top = 89
+    Left = 190
+    Top = 157
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 7
-    TextHint = 'Descri'#231#227'o Estado'
   end
   object editCodigoEstado2: TEdit
-    Left = 272
-    Top = 62
+    Left = 372
+    Top = 126
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 8
-    TextHint = 'C'#243'digo Estado 2'
   end
   object editDescricaoEstado2: TEdit
-    Left = 272
-    Top = 89
+    Left = 372
+    Top = 157
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 9
-    TextHint = 'Descri'#231#227'o Estado 2'
   end
   object editEstadoUf: TEdit
-    Left = 90
-    Top = 116
+    Left = 190
+    Top = 188
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 10
-    TextHint = 'UF'
   end
   object editUfEstado2: TEdit
-    Left = 272
-    Top = 116
+    Left = 372
+    Top = 188
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 11
-    TextHint = 'UF 2'
   end
   object editCodigoCidade: TEdit
-    Left = 90
-    Top = 143
+    Left = 190
+    Top = 219
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 12
-    TextHint = 'C'#243'digo Cidade'
   end
   object editCodigoCidade2: TEdit
-    Left = 272
-    Top = 143
+    Left = 372
+    Top = 219
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 13
-    TextHint = 'C'#243'digo Cidade 2'
   end
   object editDescricaoCidade: TEdit
-    Left = 90
-    Top = 170
+    Left = 190
+    Top = 250
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 14
-    TextHint = 'Descri'#231#227'o Cidade'
   end
   object editDescricaoCidade2: TEdit
-    Left = 272
-    Top = 170
+    Left = 372
+    Top = 250
     Width = 121
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 15
-    TextHint = 'Descri'#231#227'o Cidade 2'
+  end
+  object MainMenu1: TMainMenu
+    Left = 16
+    Top = 8
+    object Cadastro1: TMenuItem
+      Caption = 'Cadastro'
+      object Cidade1: TMenuItem
+        Caption = 'Cidade'
+        OnClick = Cidade1Click
+      end
+      object Estado1: TMenuItem
+        Caption = 'Estado'
+      end
+      object Pas1: TMenuItem
+        Caption = 'Pa'#237's'
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Sair1: TMenuItem
+        Caption = 'Sair'
+      end
+    end
   end
 end

@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, uCidade, uEstado, uPais;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, uCidade, uEstado, uPais, uCadastroCidade,
+  Vcl.Menus;
 
 type
   TForm1 = class(TForm)
@@ -24,11 +25,28 @@ type
     editCodigoCidade2: TEdit;
     editDescricaoCidade: TEdit;
     editDescricaoCidade2: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    MainMenu1: TMainMenu;
+    Cadastro1: TMenuItem;
+    Cidade1: TMenuItem;
+    Estado1: TMenuItem;
+    Pas1: TMenuItem;
+    N1: TMenuItem;
+    Sair1: TMenuItem;
     procedure btnGravarClick(Sender: TObject);
     procedure btnRecuperarClick(Sender: TObject);
+    procedure Cidade1Click(Sender: TObject);
   private
     { Private declarations }
     umaCidade: Cidade;
+    umFrmCadastroCidade: TfrmCadastroCidade;
+
   public
     { Public declarations }
   end;
@@ -90,6 +108,13 @@ begin
     umaCidade.Destruct;
     umaCidade := nil;
   end;
+end;
+
+procedure TForm1.Cidade1Click(Sender: TObject);
+begin
+  umFrmCadastroCidade := TfrmCadastroCidade.Create(nil);
+  umFrmCadastroCidade.ShowModal;
+  umFrmCadastroCidade.Destroy;
 end;
 
 end.
