@@ -1,0 +1,71 @@
+unit uCidade;
+
+interface
+
+uses uEstado;
+
+type Cidade = class
+  private
+    codigo: Integer;
+    descricao: String;
+    umEstado: Estado;
+  public
+    constructor Contruct;
+    destructor Destruct;
+
+    function GetCodigo: Integer;
+    function GetDescricao: String;
+    function GetEstado: Estado;
+
+    procedure SetCodigo(pCodigo: Integer);
+    procedure SetDescricao(pDescricao: String);
+    procedure SetEstado(pEstado: Estado);
+end;
+
+implementation
+
+{ Cidade }
+
+constructor Cidade.Contruct;
+begin
+  codigo := 0;
+  descricao := '';
+  umEstado := Estado.Create;
+end;
+
+destructor Cidade.Destruct;
+begin
+  umEstado.Destruct;
+end;
+
+function Cidade.GetCodigo: Integer;
+begin
+  Result := codigo;
+end;
+
+function Cidade.GetDescricao: String;
+begin
+  Result := descricao;
+end;
+
+function Cidade.GetEstado: Estado;
+begin
+  Result := umEstado;
+end;
+
+procedure Cidade.SetCodigo(pCodigo: Integer);
+begin
+  codigo := pCodigo;
+end;
+
+procedure Cidade.SetDescricao(pDescricao: String);
+begin
+  descricao := pDescricao;
+end;
+
+procedure Cidade.SetEstado(pEstado: Estado);
+begin
+  umEstado := pEstado;
+end;
+
+end.

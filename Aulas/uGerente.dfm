@@ -32,7 +32,7 @@ object Form1: TForm1
   end
   object editCodigoPais: TEdit
     Left = 90
-    Top = 61
+    Top = 8
     Width = 121
     Height = 21
     TabOrder = 2
@@ -40,7 +40,7 @@ object Form1: TForm1
   end
   object editDescricaoPais: TEdit
     Left = 90
-    Top = 88
+    Top = 35
     Width = 121
     Height = 21
     TabOrder = 3
@@ -48,7 +48,7 @@ object Form1: TForm1
   end
   object editCodigoPais2: TEdit
     Left = 272
-    Top = 61
+    Top = 8
     Width = 121
     Height = 21
     TabOrder = 4
@@ -56,7 +56,7 @@ object Form1: TForm1
   end
   object editDescricaoPais2: TEdit
     Left = 272
-    Top = 88
+    Top = 35
     Width = 121
     Height = 21
     TabOrder = 5
@@ -64,7 +64,7 @@ object Form1: TForm1
   end
   object editCodigoEstado: TEdit
     Left = 90
-    Top = 115
+    Top = 62
     Width = 121
     Height = 21
     TabOrder = 6
@@ -72,7 +72,7 @@ object Form1: TForm1
   end
   object editDescricaoEstado: TEdit
     Left = 90
-    Top = 142
+    Top = 89
     Width = 121
     Height = 21
     TabOrder = 7
@@ -80,7 +80,7 @@ object Form1: TForm1
   end
   object editCodigoEstado2: TEdit
     Left = 272
-    Top = 115
+    Top = 62
     Width = 121
     Height = 21
     TabOrder = 8
@@ -88,7 +88,7 @@ object Form1: TForm1
   end
   object editDescricaoEstado2: TEdit
     Left = 272
-    Top = 142
+    Top = 89
     Width = 121
     Height = 21
     TabOrder = 9
@@ -96,7 +96,7 @@ object Form1: TForm1
   end
   object editEstadoUf: TEdit
     Left = 90
-    Top = 169
+    Top = 116
     Width = 121
     Height = 21
     TabOrder = 10
@@ -104,10 +104,42 @@ object Form1: TForm1
   end
   object editUfEstado2: TEdit
     Left = 272
-    Top = 169
+    Top = 116
     Width = 121
     Height = 21
     TabOrder = 11
     TextHint = 'UF 2'
+  end
+  object editCodigoCidade: TEdit
+    Left = 90
+    Top = 143
+    Width = 121
+    Height = 21
+    TabOrder = 12
+    TextHint = 'C'#243'digo Cidade'
+  end
+  object editCodigoCidade2: TEdit
+    Left = 272
+    Top = 143
+    Width = 121
+    Height = 21
+    TabOrder = 13
+    TextHint = 'C'#243'digo Cidade 2'
+  end
+  object editDescricaoCidade: TEdit
+    Left = 90
+    Top = 170
+    Width = 121
+    Height = 21
+    TabOrder = 14
+    TextHint = 'Descri'#231#227'o Cidade'
+  end
+  object editDescricaoCidade2: TEdit
+    Left = 272
+    Top = 170
+    Width = 121
+    Height = 21
+    TabOrder = 15
+    TextHint = 'Descri'#231#227'o Cidade 2'
   end
 end

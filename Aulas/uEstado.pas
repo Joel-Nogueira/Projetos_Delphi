@@ -2,22 +2,26 @@ unit uEstado;
 
 interface
 
+uses uPais;
+
 type Estado = class
   private
     codigo: Integer;
     descricao: String;
     uf: String;
-
+    umPais: Pais;
   public
     constructor Create;
     destructor Destruct;
 
     function GetCodigo: Integer;
     function GetDescricao: String;
+    function GetPais: Pais;
     function GetUf: String;
 
     procedure SetCodigo(pCodigo: Integer);
     procedure SetDescricao(pDescricao: String);
+    procedure SetPais(pPais: Pais);
     procedure SetUf(pUf: String);
 end;
 
@@ -30,11 +34,12 @@ begin
   codigo := 0;
   descricao := '';
   uf := '';
+  umPais := Pais.Create;
 end;
 
 destructor Estado.Destruct;
 begin
-
+  umPais.Destruct;
 end;
 
 function Estado.GetCodigo: Integer;
@@ -45,6 +50,11 @@ end;
 function Estado.GetDescricao: String;
 begin
   Result := descricao;
+end;
+
+function Estado.GetPais: Pais;
+begin
+  Result := umPais;
 end;
 
 function Estado.GetUf: String;
@@ -60,6 +70,11 @@ end;
 procedure Estado.SetDescricao(pDescricao: String);
 begin
   descricao := pDescricao;
+end;
+
+procedure Estado.SetPais(pPais: Pais);
+begin
+  umPais := pPais;
 end;
 
 procedure Estado.SetUf(pUf: String);
