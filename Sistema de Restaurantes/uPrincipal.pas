@@ -37,6 +37,17 @@ type
     SpeedButton10: TSpeedButton;
     DBCtrlGrid1: TDBCtrlGrid;
     Panel8: TPanel;
+    Shape3: TShape;
+    Shape5: TShape;
+    Label6: TLabel;
+    Label7: TLabel;
+    Shape6: TShape;
+    Shape7: TShape;
+    Label8: TLabel;
+    Shape8: TShape;
+    Label9: TLabel;
+    Shape9: TShape;
+    Label10: TLabel;
   private
     { Private declarations }
   public

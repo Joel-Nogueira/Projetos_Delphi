@@ -3042,7 +3042,6 @@ object frmPrincipal: TfrmPrincipal
     Color = clWhite
     ParentBackground = False
     TabOrder = 1
-    ExplicitTop = 43
     object SpeedButton1: TSpeedButton
       Left = 468
       Top = 0
@@ -3112,9 +3111,6 @@ object frmPrincipal: TfrmPrincipal
       BevelOuter = bvNone
       Caption = 'Vers'#227'o'
       TabOrder = 0
-      ExplicitLeft = 408
-      ExplicitTop = 0
-      ExplicitHeight = 41
       DesignSize = (
         185
         28)
@@ -3161,13 +3157,12 @@ object frmPrincipal: TfrmPrincipal
     Color = 16119285
     ParentBackground = False
     TabOrder = 2
-    ExplicitTop = 69
     object Label3: TLabel
       AlignWithMargins = True
       Left = 49
       Top = 5
-      Width = 232
-      Height = 28
+      Width = 222
+      Height = 19
       Margins.Left = 15
       Caption = 'Retaguarda - PDV Atendimento'
       Color = clWhite
@@ -3225,10 +3220,6 @@ object frmPrincipal: TfrmPrincipal
       Color = clWhite
       ParentBackground = False
       TabOrder = 0
-      ExplicitLeft = 0
-      ExplicitTop = 8
-      ExplicitWidth = 999
-      ExplicitHeight = 35
       object Shape4: TShape
         Left = 0
         Top = 0
@@ -3316,7 +3307,6 @@ object frmPrincipal: TfrmPrincipal
     Color = 16119285
     ParentBackground = False
     TabOrder = 4
-    ExplicitTop = 214
     object DBCtrlGrid1: TDBCtrlGrid
       AlignWithMargins = True
       Left = 11
@@ -3336,7 +3326,7 @@ object frmPrincipal: TfrmPrincipal
       TabOrder = 0
       RowCount = 2
       ExplicitLeft = 10
-      ExplicitTop = 6
+      ExplicitTop = 3
       object Panel8: TPanel
         AlignWithMargins = True
         Left = 10
@@ -3348,10 +3338,151 @@ object frmPrincipal: TfrmPrincipal
         Margins.Right = 10
         Margins.Bottom = 10
         Align = alClient
-        Caption = 'Panel8'
+        BevelOuter = bvNone
         TabOrder = 0
-        ExplicitLeft = 9
-        ExplicitTop = 9
+        DesignSize = (
+          220
+          123)
+        object Shape3: TShape
+          Left = 0
+          Top = 0
+          Width = 220
+          Height = 123
+          Pen.Color = clSilver
+        end
+        object Shape5: TShape
+          Left = 0
+          Top = 0
+          Width = 4
+          Height = 123
+          Brush.Color = 33023
+          Pen.Color = clSilver
+          Pen.Style = psClear
+        end
+        object Label6: TLabel
+          AlignWithMargins = True
+          Left = 15
+          Top = 11
+          Width = 59
+          Height = 14
+          Margins.Left = 15
+          Caption = 'Mesa 001'
+          Color = clWhite
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 16744448
+          Font.Height = -12
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+          Layout = tlCenter
+        end
+        object Label7: TLabel
+          AlignWithMargins = True
+          Left = 15
+          Top = 31
+          Width = 84
+          Height = 13
+          Margins.Left = 15
+          Caption = 'Consumo Iniciado'
+          Color = clWhite
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentColor = False
+          ParentFont = False
+          Layout = tlCenter
+        end
+        object Shape6: TShape
+          Left = 15
+          Top = 50
+          Width = 52
+          Height = 35
+          Pen.Color = clSilver
+        end
+        object Shape7: TShape
+          Left = 3
+          Top = 99
+          Width = 217
+          Height = 24
+          Pen.Color = clSilver
+        end
+        object Label8: TLabel
+          AlignWithMargins = True
+          Left = 12
+          Top = 103
+          Width = 97
+          Height = 13
+          Margins.Left = 15
+          Caption = 'Aberto: h'#225' 23 horas'
+          Color = clWhite
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentColor = False
+          ParentFont = False
+          Layout = tlCenter
+        end
+        object Shape8: TShape
+          Left = 152
+          Top = 13
+          Width = 56
+          Height = 19
+          Margins.Top = 5
+          Margins.Right = 9
+          Margins.Bottom = 5
+          Brush.Color = clRed
+          Pen.Style = psClear
+        end
+        object Label9: TLabel
+          Left = 158
+          Top = 16
+          Width = 46
+          Height = 23
+          Anchors = [akTop, akRight]
+          AutoSize = False
+          Caption = 'Ocupada'
+          Color = clWhite
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -9
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object Shape9: TShape
+          Left = 152
+          Top = 42
+          Width = 56
+          Height = 19
+          Margins.Top = 5
+          Margins.Right = 9
+          Margins.Bottom = 5
+          Brush.Color = 5195575
+          Pen.Style = psClear
+        end
+        object Label10: TLabel
+          Left = 153
+          Top = 45
+          Width = 55
+          Height = 23
+          Anchors = [akTop, akRight]
+          AutoSize = False
+          Caption = 'Reservada'
+          Color = clWhite
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -9
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
       end
     end
   end
