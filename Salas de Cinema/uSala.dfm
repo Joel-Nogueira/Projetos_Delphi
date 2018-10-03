@@ -38,9 +38,6 @@ object uPrincipal: TuPrincipal
       ParentBackground = False
       TabOrder = 0
       OnClick = Panel1Click
-      ExplicitTop = 56
-      ExplicitWidth = 185
-      ExplicitHeight = 41
     end
   end
   object FDMemTable1: TFDMemTable
@@ -55,6 +52,9 @@ object uPrincipal: TuPrincipal
     Top = 80
     object FDMemTable1Vaga: TStringField
       FieldName = 'Vaga'
+    end
+    object FDMemTable1Ocupada: TBooleanField
+      FieldName = 'Ocupada'
     end
   end
   object DataSource1: TDataSource

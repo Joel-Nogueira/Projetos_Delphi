@@ -16,6 +16,7 @@ type
     FDMemTable1: TFDMemTable;
     DataSource1: TDataSource;
     FDMemTable1Vaga: TStringField;
+    FDMemTable1Ocupada: TBooleanField;
     procedure Panel1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure DBCtrlGrid1PaintPanel(DBCtrlGrid: TDBCtrlGrid; Index: Integer);
@@ -42,7 +43,7 @@ end;
 procedure TuPrincipal.DBCtrlGrid1PaintPanel(DBCtrlGrid: TDBCtrlGrid;
   Index: Integer);
 begin
-  if Panel1.Color = clHighlight then
+  if FDMemTable1Ocupada.AsBoolean = false then
     Panel1.Color := clHighlight
   else
     Panel1.Color := clRed;
@@ -58,19 +59,19 @@ begin
   begin
     FDMemTable1.Append;
     FDMemTable1Vaga.AsString := '';
+    FDMemTable1Ocupada.AsBoolean := false;
     FDMemTable1.Post;
   end;
 end;
 
 procedure TuPrincipal.Panel1Click(Sender: TObject);
 begin
-
-  if  (Panel1.Color = clHighlight) then
+  if  FDMemTable1Ocupada.AsBoolean = false then
   begin
-    Panel1.Color := clRed
+    FDMemTable1Ocupada.AsBoolean := true;
   end
   else
-    Panel1.Color := clHighlight;
+    FDMemTable1Ocupada.AsBoolean := false;
 end;
 
 end.
