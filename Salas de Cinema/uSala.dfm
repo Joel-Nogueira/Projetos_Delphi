@@ -25,7 +25,6 @@ object uPrincipal: TuPrincipal
     PanelHeight = 143
     PanelWidth = 140
     TabOrder = 0
-    OnClick = DBCtrlGrid1Click
     OnPaintPanel = DBCtrlGrid1PaintPanel
     object Panel1: TPanel
       Left = 0
@@ -37,10 +36,15 @@ object uPrincipal: TuPrincipal
       Color = clHighlight
       ParentBackground = False
       TabOrder = 0
-      OnClick = Panel1Click
+      ExplicitLeft = 48
+      ExplicitTop = 48
+      ExplicitWidth = 185
+      ExplicitHeight = 41
     end
   end
   object FDMemTable1: TFDMemTable
+    FieldDefs = <>
+    IndexDefs = <>
     FetchOptions.AssignedValues = [evMode]
     FetchOptions.Mode = fmAll
     ResourceOptions.AssignedValues = [rvSilentMode]
@@ -48,6 +52,7 @@ object uPrincipal: TuPrincipal
     UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
     UpdateOptions.CheckRequired = False
     UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
     Left = 472
     Top = 80
     object FDMemTable1Vaga: TStringField

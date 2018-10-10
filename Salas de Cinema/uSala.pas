@@ -7,20 +7,19 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.DBCGrids, Vcl.ExtCtrls,
   FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
   FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
-  Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+  Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.DBCtrls;
 
 type
   TuPrincipal = class(TForm)
     DBCtrlGrid1: TDBCtrlGrid;
-    Panel1: TPanel;
     FDMemTable1: TFDMemTable;
     DataSource1: TDataSource;
     FDMemTable1Vaga: TStringField;
     FDMemTable1Ocupada: TBooleanField;
-    procedure Panel1Click(Sender: TObject);
+    Panel1: TPanel;
     procedure FormCreate(Sender: TObject);
-    procedure DBCtrlGrid1PaintPanel(DBCtrlGrid: TDBCtrlGrid; Index: Integer);
     procedure DBCtrlGrid1Click(Sender: TObject);
+    procedure DBCtrlGrid1PaintPanel(DBCtrlGrid: TDBCtrlGrid; Index: Integer);
 
   private
     { Private declarations }
@@ -30,6 +29,7 @@ type
 
 var
   uPrincipal: TuPrincipal;
+  Indice: Integer;
 
 implementation
 
@@ -43,10 +43,8 @@ end;
 procedure TuPrincipal.DBCtrlGrid1PaintPanel(DBCtrlGrid: TDBCtrlGrid;
   Index: Integer);
 begin
-  if FDMemTable1Ocupada.AsBoolean = false then
-    Panel1.Color := clHighlight
-  else
-    Panel1.Color := clRed;
+  if Indice = Index then
+    Panel1.Color := clWhite;
 end;
 
 procedure TuPrincipal.FormCreate(Sender: TObject);
@@ -62,16 +60,6 @@ begin
     FDMemTable1Ocupada.AsBoolean := false;
     FDMemTable1.Post;
   end;
-end;
-
-procedure TuPrincipal.Panel1Click(Sender: TObject);
-begin
-  if  FDMemTable1Ocupada.AsBoolean = false then
-  begin
-    FDMemTable1Ocupada.AsBoolean := true;
-  end
-  else
-    FDMemTable1Ocupada.AsBoolean := false;
 end;
 
 end.
